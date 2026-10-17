@@ -16,16 +16,17 @@ directly, both in the web app and through Precision@K and Mean Reciprocal Rank (
 
 1. [Features](#features)
 2. [How it works](#how-it-works)
-3. [Project structure](#project-structure)
-4. [Installation](#installation)
-5. [Configuration](#configuration)
-6. [Running the web app](#running-the-web-app)
-7. [Using the app](#using-the-app)
-8. [Command-line tools](#command-line-tools)
-9. [Evaluation](#evaluation)
-10. [Testing](#testing)
-11. [Troubleshooting](#troubleshooting)
-12. [Limitations](#limitations)
+3. [Transformer model](#transformer-model)
+4. [Project structure](#project-structure)
+5. [Installation](#installation)
+6. [Configuration](#configuration)
+7. [Running the web app](#running-the-web-app)
+8. [Using the app](#using-the-app)
+9. [Command-line tools](#command-line-tools)
+10. [Evaluation](#evaluation)
+11. [Testing](#testing)
+12. [Troubleshooting](#troubleshooting)
+13. [Limitations](#limitations)
 
 ---
 
@@ -61,6 +62,42 @@ PARSE cannot download "every paper on the web". Instead it follows a retrieve-th
 4. **Baseline ranking.** The same candidates are scored with TF-IDF (unigrams and bigrams) for comparison.
 5. **Deep mode (optional).** The titles of the three best matches are used as extra searches, which finds
    additional related papers.
+
+## Transformer model
+
+PARSE uses **`all-MiniLM-L6-v2`**, a pretrained Sentence-BERT model distributed through the
+`sentence-transformers` library (Hugging Face id `sentence-transformers/all-MiniLM-L6-v2`). The model name is
+set in one place, `SBERT_MODEL` in `config.py`.
+
+| Property | Value |
+|---|---|
+| Architecture | MiniLM transformer encoder, 6 layers |
+| Output | One 384-dimensional embedding per text |
+| Size | About 22 million parameters (roughly a 90 MB download) |
+| Training | Contrastive fine-tuning on over 1 billion sentence pairs, so texts with similar meaning get nearby vectors |
+| Input limit | About 256 word pieces; longer text is truncated |
+| Similarity measure | Cosine similarity (embeddings are normalised, so the dot product equals the cosine) |
+
+**How PARSE uses it**
+
+1. Each paper's title and abstract is encoded into a single vector.
+2. The user's idea is encoded the same way. Long ideas are split into chunks and each chunk is encoded
+   separately.
+3. Papers are ranked by the cosine similarity between their vector and the query vector.
+
+**Why this model.** It is small and fast enough to embed 200 or more abstracts per search on an ordinary
+laptop CPU, and it is a widely used, well-tested general-purpose model for semantic search.
+
+**Known limitations.** Abstracts longer than the input limit are truncated, and the model is trained on
+general text rather than scientific papers specifically.
+
+**Changing the model.** Edit `SBERT_MODEL` in `config.py` for the web app, or pass `--model` to
+`search_cli.py`. Cached embeddings are stored per model name, so switching models never mixes vectors. The new
+model is downloaded on first use. Two alternatives worth comparing with `python search_cli.py eval`:
+
+- `all-mpnet-base-v2` – generally more accurate, but larger and slower.
+- `allenai-specter` – trained on scientific papers and their citation links, which suits this domain.
+  It has not been tested with this project.
 
 ## Project structure
 
@@ -243,4 +280,5 @@ do not need the SBERT model.
 
 Paper metadata is provided by the [arXiv API](https://info.arxiv.org/help/api/index.html), the
 [Semantic Scholar Academic Graph API](https://api.semanticscholar.org/) and [OpenAlex](https://openalex.org/).
-Embeddings use the [Sentence-Transformers](https://www.sbert.net/) library and the `all-MiniLM-L6-v2` model.
+Embeddings use the [Sentence-Transformers](https://www.sbert.net/) library and the
+[`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) model.
