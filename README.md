@@ -26,7 +26,6 @@ directly, both in the web app and through Precision@K and Mean Reciprocal Rank (
 10. [Testing](#testing)
 11. [Troubleshooting](#troubleshooting)
 12. [Limitations](#limitations)
-13. [Project team](#project-team)
 
 ---
 
