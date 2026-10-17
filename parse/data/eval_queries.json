@@ -1,0 +1,62 @@
+[
+  {
+    "query": "how can a model recognise objects it has barely seen before",
+    "relevant_topics": [
+      "few_shot"
+    ]
+  },
+  {
+    "query": "systems that reason over nodes connected by edges",
+    "relevant_topics": [
+      "gnn"
+    ]
+  },
+  {
+    "query": "working out the shape of biological molecules from their building blocks",
+    "relevant_topics": [
+      "protein"
+    ]
+  },
+  {
+    "query": "automatically rendering text from one tongue into another",
+    "relevant_topics": [
+      "mt"
+    ]
+  },
+  {
+    "query": "marking every region of a photograph with what it depicts",
+    "relevant_topics": [
+      "seg"
+    ]
+  },
+  {
+    "query": "software that gets better at a game by being rewarded for good moves",
+    "relevant_topics": [
+      "rl"
+    ]
+  },
+  {
+    "query": "learning together without sharing personal data",
+    "relevant_topics": [
+      "fl"
+    ]
+  },
+  {
+    "query": "turning what people say aloud into written words",
+    "relevant_topics": [
+      "asr"
+    ]
+  },
+  {
+    "query": "neural networks on graphs",
+    "relevant_topics": [
+      "gnn"
+    ]
+  },
+  {
+    "query": "speech recognition",
+    "relevant_topics": [
+      "asr"
+    ]
+  }
+]
