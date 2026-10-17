@@ -1,0 +1,386 @@
+[
+  {
+    "id": "sample:few_shot-0",
+    "title": "Learning New Categories from Handfuls of Labelled Images",
+    "abstract": "We study how a classifier can acquire previously unseen categories when only a handful of labelled images per class are available. A meta-trained prototype network adapts rapidly and outperforms fine-tuning baselines.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "few_shot"
+  },
+  {
+    "id": "sample:few_shot-1",
+    "title": "Episodic Meta-Training for Low-Data Recognition",
+    "abstract": "Models are trained across many small tasks so that adaptation to a novel task needs only a few gradient steps. Experiments show strong generalisation when supervision is extremely scarce.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "few_shot"
+  },
+  {
+    "id": "sample:few_shot-2",
+    "title": "Metric Spaces for Data-Scarce Classification",
+    "abstract": "We learn an embedding where distance to a support set of a few examples determines class membership. The method reaches high accuracy with one to five samples per category.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "few_shot"
+  },
+  {
+    "id": "sample:few_shot-3",
+    "title": "Transferring Knowledge to Rare Classes",
+    "abstract": "Rare categories with very few training instances are hard for deep networks. We propose feature hallucination that augments minority classes and improves recognition.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "few_shot"
+  },
+  {
+    "id": "sample:gnn-0",
+    "title": "Message Passing on Relational Structures",
+    "abstract": "We propose a neural architecture that aggregates information from neighbouring nodes in a network to produce node representations. It achieves strong results on citation and social network benchmarks.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "gnn"
+  },
+  {
+    "id": "sample:gnn-1",
+    "title": "Spectral Convolutions over Irregular Domains",
+    "abstract": "Convolution is generalised to data defined on nodes and edges using the eigenbasis of the graph Laplacian. The approach classifies vertices with limited labels.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "gnn"
+  },
+  {
+    "id": "sample:gnn-2",
+    "title": "Attention Mechanisms for Networked Data",
+    "abstract": "A learned attention weight is assigned to each neighbour of a vertex so that more informative connections dominate aggregation. Accuracy improves on molecular and citation graphs.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "gnn"
+  },
+  {
+    "id": "sample:gnn-3",
+    "title": "Predicting Links in Large Interaction Networks",
+    "abstract": "We embed entities and their relations to forecast missing edges in knowledge bases and social platforms using stacked neighbourhood aggregation.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "gnn"
+  },
+  {
+    "id": "sample:protein-0",
+    "title": "Predicting Three-Dimensional Folds from Amino Acid Sequences",
+    "abstract": "A deep network infers the spatial arrangement of residues directly from the sequence of a polypeptide chain. Predicted structures approach experimental accuracy.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "protein"
+  },
+  {
+    "id": "sample:protein-1",
+    "title": "Co-evolution Signals for Residue Contact Estimation",
+    "abstract": "Correlated mutations across homologous families reveal which residues are close in space. We use these signals to estimate tertiary structure of biomolecules.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "protein"
+  },
+  {
+    "id": "sample:protein-2",
+    "title": "Neural Models of Biomolecular Geometry",
+    "abstract": "We design an equivariant architecture that reasons about atomic coordinates and outputs the native conformation of macromolecules, accelerating drug discovery.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "protein"
+  },
+  {
+    "id": "sample:protein-3",
+    "title": "Language Models Trained on Evolutionary Sequence Data",
+    "abstract": "Self-supervised pretraining on millions of protein sequences yields representations that capture structure and function without alignments.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "protein"
+  },
+  {
+    "id": "sample:mt-0",
+    "title": "Attention-Based Sequence Models for Cross-Lingual Text Conversion",
+    "abstract": "We present an encoder-decoder system that converts sentences from one human language into another using learned alignment. It yields higher BLEU than phrase-based systems.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "mt"
+  },
+  {
+    "id": "sample:mt-1",
+    "title": "Translating Between Languages Without Parallel Corpora",
+    "abstract": "Unsupervised methods map monolingual embeddings of two languages into a shared space, enabling sentence conversion with no aligned examples.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "mt"
+  },
+  {
+    "id": "sample:mt-2",
+    "title": "Subword Units for Open-Vocabulary Language Conversion",
+    "abstract": "Rare and unseen words are handled by splitting them into smaller units, improving the rendering of morphologically rich languages.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "mt"
+  },
+  {
+    "id": "sample:mt-3",
+    "title": "Multilingual Pretraining for Low-Resource Language Pairs",
+    "abstract": "A single model trained on many languages transfers to pairs with little bilingual text, raising output quality for under-resourced languages.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "mt"
+  },
+  {
+    "id": "sample:seg-0",
+    "title": "Pixel-Wise Labelling of Street Scenes",
+    "abstract": "A fully convolutional architecture assigns a semantic class to every pixel in an urban image, delineating roads, vehicles and pedestrians.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "seg"
+  },
+  {
+    "id": "sample:seg-1",
+    "title": "Delineating Organs in Volumetric Medical Scans",
+    "abstract": "An encoder-decoder with skip connections outlines anatomical structures in tomography volumes, supporting radiotherapy planning with limited annotated data.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "seg"
+  },
+  {
+    "id": "sample:seg-2",
+    "title": "Instance Masks with Region Proposals",
+    "abstract": "We extend a detection framework to predict a binary mask for each object, separating overlapping items in cluttered photographs.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "seg"
+  },
+  {
+    "id": "sample:seg-3",
+    "title": "Boundary-Aware Partitioning of Satellite Imagery",
+    "abstract": "Land-cover regions are partitioned into coherent segments using boundary refinement, improving mapping of fields and buildings from aerial views.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "seg"
+  },
+  {
+    "id": "sample:rl-0",
+    "title": "Learning Control Policies through Trial and Error",
+    "abstract": "An agent improves its decision rule by interacting with an environment and maximising cumulative reward. We demonstrate mastery of arcade games from raw pixels.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "rl"
+  },
+  {
+    "id": "sample:rl-1",
+    "title": "Value Estimation with Deep Function Approximators",
+    "abstract": "A neural network approximates expected return for each action, stabilised by replay of past experience and slowly updated target networks.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "rl"
+  },
+  {
+    "id": "sample:rl-2",
+    "title": "Policy Gradient Methods with Trust Regions",
+    "abstract": "We constrain each update of a stochastic policy to remain close to the previous one, achieving reliable improvement on locomotion tasks.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "rl"
+  },
+  {
+    "id": "sample:rl-3",
+    "title": "Exploration Bonuses for Sparse-Reward Environments",
+    "abstract": "Curiosity-driven intrinsic signals encourage an agent to visit novel states when external feedback is rare, solving hard-exploration problems.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "rl"
+  },
+  {
+    "id": "sample:fl-0",
+    "title": "Training Models Across Decentralised Devices",
+    "abstract": "Many phones jointly train a shared model while raw user data stays on each device; only parameter updates are averaged by a coordinating server.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "fl"
+  },
+  {
+    "id": "sample:fl-1",
+    "title": "Protecting Individuals in Collaborative Learning",
+    "abstract": "We add calibrated noise to gradients so that no single person's record can be inferred from a released model, giving formal privacy guarantees.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "fl"
+  },
+  {
+    "id": "sample:fl-2",
+    "title": "Communication-Efficient Distributed Optimisation",
+    "abstract": "Compressing and sparsifying updates reduces bandwidth when thousands of clients with heterogeneous data take part in training.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "fl"
+  },
+  {
+    "id": "sample:fl-3",
+    "title": "Secure Aggregation without Revealing Individual Contributions",
+    "abstract": "Cryptographic masking lets a server compute the sum of client updates without seeing any single one, safeguarding confidential information.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "fl"
+  },
+  {
+    "id": "sample:asr-0",
+    "title": "End-to-End Transcription of Spoken Utterances",
+    "abstract": "A single neural network maps acoustic waveforms directly to text without a hand-built pronunciation lexicon, lowering word error rate on conversational audio.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2018,
+    "url": "",
+    "source": "sample",
+    "topic": "asr"
+  },
+  {
+    "id": "sample:asr-1",
+    "title": "Self-Supervised Representations of Raw Audio",
+    "abstract": "Pretraining on unlabelled recordings yields features that make recognising spoken words possible with only a few hours of transcribed data.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2019,
+    "url": "",
+    "source": "sample",
+    "topic": "asr"
+  },
+  {
+    "id": "sample:asr-2",
+    "title": "Robust Recognition of Speech in Noisy Environments",
+    "abstract": "Data augmentation and enhancement front-ends improve transcription accuracy when background noise and reverberation corrupt the signal.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2020,
+    "url": "",
+    "source": "sample",
+    "topic": "asr"
+  },
+  {
+    "id": "sample:asr-3",
+    "title": "Streaming Decoding for Voice Assistants",
+    "abstract": "A low-latency model converts speech to text incrementally as the user talks, enabling responsive voice interfaces on mobile hardware.",
+    "authors": [
+      "Demo Author"
+    ],
+    "year": 2021,
+    "url": "",
+    "source": "sample",
+    "topic": "asr"
+  }
+]
