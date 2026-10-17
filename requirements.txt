@@ -1,0 +1,6 @@
+numpy>=1.24
+scikit-learn>=1.3
+sentence-transformers>=2.7
+requests>=2.31
+streamlit>=1.46
+pytest>=7.4
